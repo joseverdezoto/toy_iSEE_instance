@@ -1,6 +1,7 @@
 library(Seurat)
 library(readr)
 library(iSEE)
+library(shiny)
 
 
 # In this script will play around making an iSEE app for the Wirka data and Newman et al data  
