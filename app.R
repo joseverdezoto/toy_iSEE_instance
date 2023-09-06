@@ -186,7 +186,8 @@ initial[["SampleAssayPlot1"]] <- new("SampleAssayPlot", Assay = "logcounts", XAx
                                      SelectionHistory = list())
 
 # Run the app with the newly configured panels
-iSEE::iSEE(newman_sce, initial = initial, appTitle = "Newman et al scRNA data")
+app = iSEE::iSEE(newman_sce, initial = initial, appTitle = "Newman et al scRNA data")
+shiny::runApp(app, port = 3838)
 
 
 
