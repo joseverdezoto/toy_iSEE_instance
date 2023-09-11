@@ -6,7 +6,7 @@ library(shiny)
 
 # In this script will play around making an iSEE app for the Wirka data and Newman et al data  
 #newman_scrna = readr::read_rds("~/Desktop/SMC_modulation_project/mouse_scRNA_data/Nat_metabolism_scRNA_data/GFA_2020.01_VSKO-E002-1.rds")
-newman_scrna = readr::read_rds("GFA_2020.01_VSKO-E002-1.rds")
+newman_scrna = readr::read_rds("toy_iSEE_instance/GFA_2020.01_VSKO-E002-1.rds")
 
 # Convert to sce
 newman_sce = Seurat::as.SingleCellExperiment(newman_scrna)
